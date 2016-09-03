@@ -5,7 +5,7 @@ class VGameRacket:UIView
     weak var controller:CGame!
     weak var layoutRacketTop:NSLayoutConstraint!
     var currentCenterY:CGFloat
-    private var expectedCenterY:CGFloat
+    var expectedCenterY:CGFloat
     private let kCornerRadius:CGFloat = 4
     private let kWidth:CGFloat = 25
     private let kHeight:CGFloat = 100
