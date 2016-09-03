@@ -16,12 +16,16 @@ class VGame:UIView
     
     override func touchesBegan(touches:Set<UITouch>, withEvent event:UIEvent?)
     {
-        
+        let touch:UITouch = touches.first!
+        let point:CGPoint = touch.locationInView(self)
+        racket.touchedAt(point)
     }
     
     override func touchesMoved(touches:Set<UITouch>, withEvent event:UIEvent?)
     {
-        
+        let touch:UITouch = touches.first!
+        let point:CGPoint = touch.locationInView(self)
+        racket.touchedAt(point)
     }
     
     //MARKK: public

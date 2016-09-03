@@ -7,11 +7,14 @@ class VGameRacket:UIView
     private let kCornerRadius:CGFloat = 4
     private let kWidth:CGFloat = 25
     private let kHeight:CGFloat = 100
-    private let kLeft:CGFloat = 40
+    private let kLeft:CGFloat = 50
+    private var height_2:CGFloat
     
-    convenience init(controller:CGame)
+    init(controller:CGame)
     {
-        self.init()
+        height_2 = kHeight / 2.0
+        
+        super.init(frame:CGRectZero)
         userInteractionEnabled = false
         backgroundColor = UIColor.blueColor()
         clipsToBounds = true
@@ -41,9 +44,8 @@ class VGameRacket:UIView
             metrics:metrics,
             views:views))
         
-        let height:CGFloat = UIScreen.mainScreen().bounds.maxY
-        let remain:CGFloat = height - kHeight
-        let margin:CGFloat = remain / 2.0
+        let midY:CGFloat = UIScreen.mainScreen().bounds.midY
+        let margin:CGFloat = midY - height_2
         
         layoutRacketTop = NSLayoutConstraint(
             item:self,
@@ -55,5 +57,17 @@ class VGameRacket:UIView
             constant:margin)
         
         parent.addConstraint(layoutRacketTop)
+    }
+    
+    required init?(coder:NSCoder)
+    {
+        fatalError()
+    }
+    
+    //MARK: public
+    
+    func touchedAt(point:CGPoint)
+    {
+        layoutRacketTop.constant = point.y - height_2
     }
 }
