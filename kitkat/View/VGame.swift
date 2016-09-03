@@ -7,7 +7,7 @@ class VGame:UIView
     convenience init(controller:CGame)
     {
         self.init()
-        backgroundColor = UIColor.redColor()
+        backgroundColor = UIColor.whiteColor()
         translatesAutoresizingMaskIntoConstraints = false
         self.controller = controller
     }
