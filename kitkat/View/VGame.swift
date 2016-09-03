@@ -38,6 +38,6 @@ class VGame:UIView
     
     func tick()
     {
-        
+        racket.tick()
     }
 }
