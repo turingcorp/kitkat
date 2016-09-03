@@ -4,15 +4,20 @@ class VGameRacket:UIView
 {
     weak var controller:CGame!
     weak var layoutRacketTop:NSLayoutConstraint!
+    private var expectedCenterY:CGFloat
+    private var currentCenterY:CGFloat
     private let kCornerRadius:CGFloat = 4
     private let kWidth:CGFloat = 25
     private let kHeight:CGFloat = 100
     private let kLeft:CGFloat = 50
+    private let kDeltaY:CGFloat = 2
     private var height_2:CGFloat
     
     init(controller:CGame)
     {
         height_2 = kHeight / 2.0
+        expectedCenterY = 0
+        currentCenterY = 0
         
         super.init(frame:CGRectZero)
         userInteractionEnabled = false
@@ -45,7 +50,8 @@ class VGameRacket:UIView
             views:views))
         
         let midY:CGFloat = UIScreen.mainScreen().bounds.midY
-        let margin:CGFloat = midY - height_2
+        currentCenterY = midY - height_2
+        expectedCenterY = currentCenterY
         
         layoutRacketTop = NSLayoutConstraint(
             item:self,
@@ -54,7 +60,7 @@ class VGameRacket:UIView
             toItem:parent,
             attribute:NSLayoutAttribute.Top,
             multiplier:1,
-            constant:margin)
+            constant:currentCenterY)
         
         parent.addConstraint(layoutRacketTop)
     }
@@ -68,6 +74,11 @@ class VGameRacket:UIView
     
     func touchedAt(point:CGPoint)
     {
-        layoutRacketTop.constant = point.y - height_2
+        expectedCenterY = point.y
+    }
+    
+    func tick()
+    {
+        
     }
 }

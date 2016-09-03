@@ -35,4 +35,9 @@ class VGame:UIView
         self.racket = VGameRacket(controller:controller)
         userInteractionEnabled = true
     }
+    
+    func tick()
+    {
+        
+    }
 }

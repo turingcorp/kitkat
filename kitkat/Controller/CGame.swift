@@ -9,8 +9,8 @@ class CGame:CController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        viewGame.load()
         
+        viewGame.load()
         timer = NSTimer.scheduledTimerWithTimeInterval(kTimerInterval, target:self, selector:#selector(self.timerTick(sender:)), userInfo:nil, repeats:true)
     }
     
@@ -23,6 +23,6 @@ class CGame:CController
     
     func timerTick(sender timer:NSTimer)
     {
-        
+        viewGame.tick()
     }
 }
