@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAA504391D7A4D3F0029E6FD /* VGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA504381D7A4D3F0029E6FD /* VGame.swift */; };
 		DACF96801D7A4AD30046DFFB /* CategoryMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF966E1D7A4AD30046DFFB /* CategoryMKAnnotationView.swift */; };
 		DACF96811D7A4AD30046DFFB /* CategoryNSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF966F1D7A4AD30046DFFB /* CategoryNSDate.swift */; };
 		DACF96821D7A4AD30046DFFB /* CategoryNSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF96701D7A4AD30046DFFB /* CategoryNSFileManager.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		DA9C55D11D7A496D006778D5 /* kitkat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kitkat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9C55E01D7A496D006778D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA504381D7A4D3F0029E6FD /* VGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VGame.swift; sourceTree = "<group>"; };
 		DACF966E1D7A4AD30046DFFB /* CategoryMKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryMKAnnotationView.swift; sourceTree = "<group>"; };
 		DACF966F1D7A4AD30046DFFB /* CategoryNSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryNSDate.swift; sourceTree = "<group>"; };
 		DACF96701D7A4AD30046DFFB /* CategoryNSFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryNSFileManager.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		DACF967F1D7A4AD30046DFFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAA504381D7A4D3F0029E6FD /* VGame.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				DACF96811D7A4AD30046DFFB /* CategoryNSDate.swift in Sources */,
 				DACF96931D7A4C300046DFFB /* CController.swift in Sources */,
 				DACF96871D7A4AD30046DFFB /* CategoryUIFont.swift in Sources */,
+				DAA504391D7A4D3F0029E6FD /* VGame.swift in Sources */,
 				DACF96821D7A4AD30046DFFB /* CategoryNSFileManager.swift in Sources */,
 				DACF968F1D7A4BA70046DFFB /* CParent.swift in Sources */,
 				DACF96831D7A4AD30046DFFB /* CategoryNSManagerdObject.swift in Sources */,
