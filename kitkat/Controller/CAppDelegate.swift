@@ -9,8 +9,8 @@ class AppDelegate:UIResponder, UIApplicationDelegate
     func application(application:UIApplication, didFinishLaunchingWithOptions launchOptions:[NSObject:AnyObject]?) -> Bool
     {
         let window:UIWindow = UIWindow(frame:UIScreen.mainScreen().bounds)
-        window.makeKeyAndVisible()
         window.backgroundColor = UIColor.whiteColor()
+        window.makeKeyAndVisible()
         
         let parent:CParent = CParent()
         window.rootViewController = parent

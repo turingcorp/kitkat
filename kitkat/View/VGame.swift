@@ -8,6 +8,7 @@ class VGame:UIView
     {
         self.init()
         backgroundColor = UIColor.redColor()
+        translatesAutoresizingMaskIntoConstraints = false
         self.controller = controller
     }
 }

@@ -4,6 +4,12 @@ class CGame:CController
 {
     weak var viewGame:VGame!
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+    }
+    
     override func loadView()
     {
         let viewGame:VGame = VGame(controller:self)

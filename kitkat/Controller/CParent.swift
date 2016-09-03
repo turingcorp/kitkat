@@ -10,7 +10,24 @@ class CParent:UIViewController
 
         let game:CGame = CGame()
         addChildViewController(game)
+        view.addSubview(game.view)
+        game.didMoveToParentViewController(self)
         
+        let views:[String:AnyObject] = [
+            "child":game.view]
+        
+        let metrics:[String:AnyObject] = [:]
+        
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(
+            "H:|-0-[child]-0-|",
+            options:[],
+            metrics:metrics,
+            views:views))
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(
+            "V:|-0-[child]-0-|",
+            options:[],
+            metrics:metrics,
+            views:views))
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle
