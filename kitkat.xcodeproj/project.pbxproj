@@ -19,6 +19,7 @@
 		DACF96891D7A4AD30046DFFB /* CategoryUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF96771D7A4AD30046DFFB /* CategoryUIViewController.swift */; };
 		DACF968A1D7A4AD30046DFFB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DACF967C1D7A4AD30046DFFB /* Localizable.strings */; };
 		DACF968B1D7A4AD30046DFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACF967E1D7A4AD30046DFFB /* LaunchScreen.storyboard */; };
+		DACF968D1D7A4B6E0046DFFB /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF968C1D7A4B6E0046DFFB /* CAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DACF96771D7A4AD30046DFFB /* CategoryUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryUIViewController.swift; sourceTree = "<group>"; };
 		DACF967D1D7A4AD30046DFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DACF967E1D7A4AD30046DFFB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DACF968C1D7A4B6E0046DFFB /* CAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		DACF96781D7A4AD30046DFFB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DACF968C1D7A4B6E0046DFFB /* CAppDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DACF96841D7A4AD30046DFFB /* CategoryNSNotification.swift in Sources */,
+				DACF968D1D7A4B6E0046DFFB /* CAppDelegate.swift in Sources */,
 				DACF96811D7A4AD30046DFFB /* CategoryNSDate.swift in Sources */,
 				DACF96871D7A4AD30046DFFB /* CategoryUIFont.swift in Sources */,
 				DACF96821D7A4AD30046DFFB /* CategoryNSFileManager.swift in Sources */,
@@ -276,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -316,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -327,24 +331,25 @@
 		DA9C55E41D7A496D006778D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = kitkat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.kitkat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		DA9C55E51D7A496D006778D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = kitkat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.kitkat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
