@@ -8,11 +8,9 @@ class CParent:UIViewController
     {
         super.viewDidLoad()
 
+        let game:CGame = CGame()
+        addChildViewController(game)
         
-        let news:CNews = CNews()
-        pushController(news, transition:MMainTransition.Replace())
-        MUser.sharedInstance.load()
-        MGandaller.sharedInstance.load()
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle

@@ -21,6 +21,8 @@
 		DACF968B1D7A4AD30046DFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACF967E1D7A4AD30046DFFB /* LaunchScreen.storyboard */; };
 		DACF968D1D7A4B6E0046DFFB /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF968C1D7A4B6E0046DFFB /* CAppDelegate.swift */; };
 		DACF968F1D7A4BA70046DFFB /* CParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF968E1D7A4BA70046DFFB /* CParent.swift */; };
+		DACF96911D7A4C1F0046DFFB /* CGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF96901D7A4C1F0046DFFB /* CGame.swift */; };
+		DACF96931D7A4C300046DFFB /* CController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF96921D7A4C300046DFFB /* CController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		DACF967E1D7A4AD30046DFFB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DACF968C1D7A4B6E0046DFFB /* CAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAppDelegate.swift; sourceTree = "<group>"; };
 		DACF968E1D7A4BA70046DFFB /* CParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CParent.swift; sourceTree = "<group>"; };
+		DACF96901D7A4C1F0046DFFB /* CGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGame.swift; sourceTree = "<group>"; };
+		DACF96921D7A4C300046DFFB /* CController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 			children = (
 				DACF968C1D7A4B6E0046DFFB /* CAppDelegate.swift */,
 				DACF968E1D7A4BA70046DFFB /* CParent.swift */,
+				DACF96921D7A4C300046DFFB /* CController.swift */,
+				DACF96901D7A4C1F0046DFFB /* CGame.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -221,11 +227,13 @@
 				DACF96841D7A4AD30046DFFB /* CategoryNSNotification.swift in Sources */,
 				DACF968D1D7A4B6E0046DFFB /* CAppDelegate.swift in Sources */,
 				DACF96811D7A4AD30046DFFB /* CategoryNSDate.swift in Sources */,
+				DACF96931D7A4C300046DFFB /* CController.swift in Sources */,
 				DACF96871D7A4AD30046DFFB /* CategoryUIFont.swift in Sources */,
 				DACF96821D7A4AD30046DFFB /* CategoryNSFileManager.swift in Sources */,
 				DACF968F1D7A4BA70046DFFB /* CParent.swift in Sources */,
 				DACF96831D7A4AD30046DFFB /* CategoryNSManagerdObject.swift in Sources */,
 				DACF96881D7A4AD30046DFFB /* CategoryUILocalNotification.swift in Sources */,
+				DACF96911D7A4C1F0046DFFB /* CGame.swift in Sources */,
 				DACF96891D7A4AD30046DFFB /* CategoryUIViewController.swift in Sources */,
 				DACF96801D7A4AD30046DFFB /* CategoryMKAnnotationView.swift in Sources */,
 				DACF96851D7A4AD30046DFFB /* CategoryUICollectionReusableView.swift in Sources */,
