@@ -37,7 +37,7 @@ class CParent:UIViewController
     
     override func prefersStatusBarHidden() -> Bool
     {
-        return false
+        return true
     }
     
     //MARK: public
