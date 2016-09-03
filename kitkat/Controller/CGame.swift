@@ -7,7 +7,7 @@ class CGame:CController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        viewGame.load()
     }
     
     override func loadView()
